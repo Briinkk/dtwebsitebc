@@ -96,6 +96,14 @@
   .strip-item .lbl{font-size:0.85rem; color:var(--grey); margin-top:4px;}
   @media (max-width: 700px){.strip .wrap{grid-template-columns:repeat(2,1fr); row-gap:20px;} .strip-item:nth-child(3){border-left:none;}}
 
+  /* ---------- PHOTO SLOTS ----------
+     Any element with class="photo-slot" is a real-photo placeholder.
+     Drop your own image file next to this HTML file (e.g. in an /images
+     folder) and set that <img>'s src to it. Until then, the onerror
+     handler hides the broken image and the gradient behind it shows
+     through, so the layout never breaks. */
+  .photo-slot{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;}
+
   /* ---------- SECTIONS ---------- */
   .section{padding:88px 0;}
   .section-head{display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:44px; gap:24px; flex-wrap:wrap;}
@@ -204,6 +212,8 @@
         </div>
       </div>
       <div class="hero-art">
+        <!-- PHOTO SLOT: hero exterior shot, e.g. images/hero-exterior.jpg -->
+        <img class="photo-slot" src="images/hero-exterior.jpg" alt="Hotel Gracery Shinjuku tower exterior" onerror="this.style.display='none'">
         <div class="hero-stat">
           <div class="num">8.4 / 10</div>
           <div class="lbl">from over 8,000 reviews</div>
@@ -229,7 +239,11 @@
       </div>
       <div class="room-preview-grid">
         <div class="room-card">
-          <div class="room-thumb"><span class="room-code">Single</span></div>
+          <div class="room-thumb">
+            <!-- PHOTO SLOT: images/room-standard-single.jpg -->
+            <img class="photo-slot" src="images/room-standard-single.jpg" alt="Standard Single room" onerror="this.style.display='none'">
+            <span class="room-code">Single</span>
+          </div>
           <div class="room-body">
             <h3>Standard Single</h3>
             <div class="room-meta">1 bed · 13 m² · also available on ladies-only floors</div>
@@ -240,7 +254,11 @@
           </div>
         </div>
         <div class="room-card">
-          <div class="room-thumb"><span class="room-code">Twin</span></div>
+          <div class="room-thumb">
+            <!-- PHOTO SLOT: images/room-standard-twin.jpg -->
+            <img class="photo-slot" src="images/room-standard-twin.jpg" alt="Standard Twin room" onerror="this.style.display='none'">
+            <span class="room-code">Twin</span>
+          </div>
           <div class="room-body">
             <h3>Standard Twin</h3>
             <div class="room-meta">2 beds · 19 m² · city or Kabukicho view</div>
@@ -251,7 +269,11 @@
           </div>
         </div>
         <div class="room-card">
-          <div class="room-thumb"><span class="room-code">Deluxe</span></div>
+          <div class="room-thumb">
+            <!-- PHOTO SLOT: images/room-deluxe-twin.jpg -->
+            <img class="photo-slot" src="images/room-deluxe-twin.jpg" alt="Deluxe Twin room" onerror="this.style.display='none'">
+            <span class="room-code">Deluxe</span>
+          </div>
           <div class="room-body">
             <h3>Deluxe Twin</h3>
             <div class="room-meta">2 beds · 24 m² · higher floor, extra space</div>
@@ -277,7 +299,10 @@
           <li><strong>Seibu Shinjuku Station</strong> ~3 min walk</li>
         </ul>
       </div>
-      <div class="locate-art"></div>
+      <div class="locate-art">
+        <!-- PHOTO SLOT: street/location shot, e.g. images/kabukicho-street.jpg -->
+        <img class="photo-slot" src="images/kabukicho-street.jpg" alt="Kabukicho street view near Hotel Gracery Shinjuku" onerror="this.style.display='none'">
+      </div>
     </div>
   </div>
 </section>
@@ -293,7 +318,11 @@
 
       <div class="rooms-list">
         <div class="room-row">
-          <div class="room-row-thumb"><span class="room-code">Single</span></div>
+          <div class="room-row-thumb">
+            <!-- PHOTO SLOT: images/room-standard-single.jpg -->
+            <img class="photo-slot" src="images/room-standard-single.jpg" alt="Standard Single room" onerror="this.style.display='none'">
+            <span class="room-code">Single</span>
+          </div>
           <div class="room-row-info">
             <h3>Standard Single</h3>
             <p>A compact room built for one, with a full-size bed, work desk, and everything you need for a short stay in the city. Also bookable on our ladies-only floors.</p>
@@ -311,7 +340,11 @@
         </div>
 
         <div class="room-row">
-          <div class="room-row-thumb"><span class="room-code">Twin</span></div>
+          <div class="room-row-thumb">
+            <!-- PHOTO SLOT: images/room-standard-twin.jpg -->
+            <img class="photo-slot" src="images/room-standard-twin.jpg" alt="Standard Twin room" onerror="this.style.display='none'">
+            <span class="room-code">Twin</span>
+          </div>
           <div class="room-row-info">
             <h3>Standard Twin</h3>
             <p>Two beds and a bit more room to spread out, good for friends or a couple who'd rather not share a bed. Available with either city or Kabukicho-facing windows.</p>
@@ -329,7 +362,11 @@
         </div>
 
         <div class="room-row">
-          <div class="room-row-thumb"><span class="room-code">Double</span></div>
+          <div class="room-row-thumb">
+            <!-- PHOTO SLOT: images/room-double.jpg -->
+            <img class="photo-slot" src="images/room-double.jpg" alt="Double room" onerror="this.style.display='none'">
+            <span class="room-code">Double</span>
+          </div>
           <div class="room-row-info">
             <h3>Double Room</h3>
             <p>One larger bed built for two, on the more compact end of our doubles — a solid pick for couples who want to keep costs down without giving up comfort.</p>
@@ -347,7 +384,11 @@
         </div>
 
         <div class="room-row">
-          <div class="room-row-thumb"><span class="room-code">Deluxe</span></div>
+          <div class="room-row-thumb">
+            <!-- PHOTO SLOT: images/room-deluxe-twin.jpg -->
+            <img class="photo-slot" src="images/room-deluxe-twin.jpg" alt="Deluxe Twin room" onerror="this.style.display='none'">
+            <span class="room-code">Deluxe</span>
+          </div>
           <div class="room-row-info">
             <h3>Deluxe Twin</h3>
             <p>The same twin layout with noticeably more floor space and a higher-floor placement, so you get a better view along with the extra room.</p>
@@ -365,7 +406,11 @@
         </div>
 
         <div class="room-row">
-          <div class="room-row-thumb"><span class="room-code">Triple</span></div>
+          <div class="room-row-thumb">
+            <!-- PHOTO SLOT: images/room-standard-triple.jpg -->
+            <img class="photo-slot" src="images/room-standard-triple.jpg" alt="Standard Triple room" onerror="this.style.display='none'">
+            <span class="room-code">Triple</span>
+          </div>
           <div class="room-row-info">
             <h3>Standard Triple</h3>
             <p>Three beds in one room, built for small groups or families traveling together who'd rather stay in one place than split across two rooms.</p>
@@ -383,7 +428,11 @@
         </div>
 
         <div class="room-row">
-          <div class="room-row-thumb"><span class="room-code">Superior</span></div>
+          <div class="room-row-thumb">
+            <!-- PHOTO SLOT: images/room-superior.jpg -->
+            <img class="photo-slot" src="images/room-superior.jpg" alt="Superior room" onerror="this.style.display='none'">
+            <span class="room-code">Superior</span>
+          </div>
           <div class="room-row-info">
             <h3>Superior Room</h3>
             <p>Our top room category — the most space, the best floors, and the closest views of the rooftop Godzilla head from your own window.</p>
