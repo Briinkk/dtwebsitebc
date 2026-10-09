@@ -20,7 +20,7 @@
     --blue-tint:#EAF1F6;
     --blue-tint-2:#DCE7EE;
   }
- 
+
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
   body{
@@ -40,9 +40,9 @@
   img, svg{display:block; max-width:100%;}
   button{font-family:inherit; cursor:pointer;}
   :focus-visible{outline:2px solid var(--blue-deep); outline-offset:3px;}
- 
+
   .wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
- 
+
   /* ---------- NAV ---------- */
   .topnav{
     position:sticky; top:0; z-index:50;
@@ -63,11 +63,11 @@
   .nav-cta{display:inline-flex; align-items:center; gap:8px; background:var(--ink); color:var(--white); padding:11px 22px; border-radius:100px; font-size:0.9rem; font-weight:500; border:none;}
   .nav-cta:hover{background:var(--blue-deep);}
   @media (max-width: 780px){.navlinks{display:none;}}
- 
+
   /* ---------- PAGES ---------- */
   .page{display:none;}
   .page.active{display:block;}
- 
+
   /* ---------- HERO ---------- */
   .hero{padding:96px 0 64px; position:relative; overflow:hidden;}
   .hero-grid{display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:center;}
@@ -79,14 +79,14 @@
   .btn-primary:hover{background:var(--blue-deep);}
   .btn-ghost{background:transparent; color:var(--ink); padding:15px 28px; border-radius:100px; font-size:0.95rem; font-weight:500; border:1px solid var(--line-soft); transition:border-color .18s ease, background .18s ease;}
   .btn-ghost:hover{border-color:var(--ink); background:var(--paper);}
- 
+
   .hero-art{position:relative; aspect-ratio:4/5; border-radius:18px; background:linear-gradient(155deg, var(--blue-tint) 0%, var(--blue-tint-2) 55%, var(--ink) 230%); overflow:hidden; border:1px solid var(--line-soft);}
   .hero-art svg{position:absolute; inset:0; width:100%; height:100%;}
   .hero-stat{position:absolute; left:24px; bottom:24px; background:rgba(11,12,14,0.9); color:var(--white); padding:18px 22px; border-radius:12px; backdrop-filter:blur(6px);}
   .hero-stat .num{font-family:'Space Grotesk'; font-size:1.6rem; font-weight:600;}
   .hero-stat .lbl{font-size:0.8rem; color:#C9D3DA; margin-top:2px;}
   @media (max-width: 860px){.hero-grid{grid-template-columns:1fr;} .hero-art{aspect-ratio:16/10;}}
- 
+
   /* ---------- STRIP ---------- */
   .strip{border-top:1px solid var(--line-soft); border-bottom:1px solid var(--line-soft); background:var(--paper);}
   .strip .wrap{display:grid; grid-template-columns:repeat(4,1fr);}
@@ -95,7 +95,7 @@
   .strip-item .num{font-family:'Space Grotesk'; font-size:1.5rem; font-weight:600;}
   .strip-item .lbl{font-size:0.85rem; color:var(--grey); margin-top:4px;}
   @media (max-width: 700px){.strip .wrap{grid-template-columns:repeat(2,1fr); row-gap:20px;} .strip-item:nth-child(3){border-left:none;}}
- 
+
   /* ---------- PHOTO SLOTS ----------
      Any element with class="photo-slot" is a real-photo placeholder.
      Drop your own image file next to this HTML file (e.g. in an /images
@@ -103,13 +103,13 @@
      handler hides the broken image and the gradient behind it shows
      through, so the layout never breaks. */
   .photo-slot{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;}
- 
+
   /* ---------- SECTIONS ---------- */
   .section{padding:88px 0;}
   .section-head{display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:44px; gap:24px; flex-wrap:wrap;}
   .section-head h2{font-size:clamp(1.8rem,3vw,2.5rem);}
   .section-head p{color:var(--grey); max-width:42ch;}
- 
+
   /* ---------- LOCATION STRIP ---------- */
   .locate{display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;}
   .locate-art{aspect-ratio:16/11; border-radius:16px; background:linear-gradient(160deg, var(--blue-tint), var(--blue-tint-2)); position:relative; overflow:hidden; border:1px solid var(--line-soft);}
@@ -117,7 +117,7 @@
   .locate li{display:flex; gap:12px; padding:10px 0; border-bottom:1px solid var(--line-soft); font-size:0.95rem; color:var(--grey);}
   .locate li strong{color:var(--ink); font-weight:500; min-width:120px; flex-shrink:0;}
   @media (max-width:860px){.locate{grid-template-columns:1fr;}}
- 
+
   /* ---------- ROOM PREVIEW (home) ---------- */
   .room-preview-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
   @media (max-width:900px){.room-preview-grid{grid-template-columns:1fr;}}
@@ -133,7 +133,7 @@
   .room-price span{font-family:'Inter'; font-weight:400; color:var(--grey); font-size:0.8rem;}
   .link-btn{font-size:0.88rem; font-weight:500; color:var(--blue-deep); border-bottom:1px solid transparent;}
   .link-btn:hover{border-color:var(--blue-deep);}
- 
+
   /* ---------- ROOMS PAGE ---------- */
   .rooms-list{display:flex; flex-direction:column;}
   .room-row{display:grid; grid-template-columns:280px 1fr auto; gap:32px; align-items:center; padding:32px 0; border-bottom:1px solid var(--line-soft);}
@@ -147,7 +147,7 @@
   .room-row-action{text-align:right; display:flex; flex-direction:column; align-items:flex-end; gap:14px;}
   .room-row-action .room-price{font-size:1.35rem;}
   @media (max-width:820px){.room-row{grid-template-columns:1fr; text-align:left;} .room-row-action{align-items:flex-start; flex-direction:row; justify-content:space-between; width:100%;}}
- 
+
   /* ---------- BOOKINGS ---------- */
   .booking-shell{display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--line-soft); border-radius:20px; overflow:hidden;}
   @media (max-width:900px){.booking-shell{grid-template-columns:1fr;}}
@@ -171,13 +171,13 @@
   .submit-btn:hover{background:var(--blue-deep);}
   .confirm-note{display:none; margin-top:18px; padding:14px 16px; background:var(--blue-tint); border:1px solid var(--blue-tint-2); border-radius:10px; font-size:0.88rem; color:var(--blue-deep);}
   .confirm-note.show{display:block;}
- 
+
   footer{border-top:1px solid var(--line-soft); padding:48px 0; color:var(--grey); font-size:0.86rem;}
   footer .wrap{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;}
 </style>
 </head>
 <body>
- 
+
 <nav class="topnav">
   <div class="wrap">
     <div class="brand">
@@ -197,7 +197,7 @@
     <button class="nav-cta" onclick="showPage('bookings')">Reserve a room</button>
   </div>
 </nav>
- 
+
 <!-- ============ HOME ============ -->
 <section id="home" class="page active">
   <div class="hero">
@@ -221,7 +221,7 @@
       </div>
     </div>
   </div>
- 
+
   <div class="strip">
     <div class="wrap">
       <div class="strip-item"><div class="num">970</div><div class="lbl">rooms across the tower</div></div>
@@ -230,7 +230,7 @@
       <div class="strip-item"><div class="num">2:00 PM</div><div class="lbl">standard check-in</div></div>
     </div>
   </div>
- 
+
   <div class="section">
     <div class="wrap">
       <div class="section-head">
@@ -241,7 +241,7 @@
         <div class="room-card">
           <div class="room-thumb">
             <!-- PHOTO SLOT: images/room-standard-single.jpg -->
-            <img class="photo-slot" src="images/room-standard-single.jpg" alt="Standard Single room" onerror="this.style.display='none'">
+            <img class="photo-slot" src="https://images.unsplash.com/photo-1702255489644-392758161f1f?auto=format&fit=crop&w=1000&q=70" alt="Standard Single room" onerror="this.style.display='none'">
             <span class="room-code">Single</span>
           </div>
           <div class="room-body">
@@ -256,7 +256,7 @@
         <div class="room-card">
           <div class="room-thumb">
             <!-- PHOTO SLOT: images/room-standard-twin.jpg -->
-            <img class="photo-slot" src="images/room-standard-twin.jpg" alt="Standard Twin room" onerror="this.style.display='none'">
+            <img class="photo-slot" src="https://images.unsplash.com/photo-1631844820822-caeca853b27d?auto=format&fit=crop&w=1000&q=70" alt="Standard Twin room" onerror="this.style.display='none'">
             <span class="room-code">Twin</span>
           </div>
           <div class="room-body">
@@ -271,7 +271,7 @@
         <div class="room-card">
           <div class="room-thumb">
             <!-- PHOTO SLOT: images/room-deluxe-twin.jpg -->
-            <img class="photo-slot" src="images/room-deluxe-twin.jpg" alt="Deluxe Twin room" onerror="this.style.display='none'">
+            <img class="photo-slot" src="https://images.unsplash.com/photo-1631844820835-e698dc518bc6?auto=format&fit=crop&w=1000&q=70" alt="Deluxe Twin room" onerror="this.style.display='none'">
             <span class="room-code">Deluxe</span>
           </div>
           <div class="room-body">
@@ -286,7 +286,7 @@
       </div>
     </div>
   </div>
- 
+
   <div class="section" style="padding-top:0;">
     <div class="wrap locate">
       <div>
@@ -306,7 +306,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- ============ ROOMS ============ -->
 <section id="rooms" class="page">
   <div class="section">
@@ -315,12 +315,12 @@
         <h2>All room types</h2>
         <p>Rates shown per night, before the Tokyo accommodation tax. Breakfast buffet available separately.</p>
       </div>
- 
+
       <div class="rooms-list">
         <div class="room-row">
           <div class="room-row-thumb">
             <!-- PHOTO SLOT: images/room-standard-single.jpg -->
-            <img class="photo-slot" src="images/room-standard-single.jpg" alt="Standard Single room" onerror="this.style.display='none'">
+            <img class="photo-slot" src="https://images.unsplash.com/photo-1702255489644-392758161f1f?auto=format&fit=crop&w=1000&q=70" alt="Standard Single room" onerror="this.style.display='none'">
             <span class="room-code">Single</span>
           </div>
           <div class="room-row-info">
@@ -338,11 +338,11 @@
             <button class="btn-primary" onclick="showPage('bookings')">Book this room</button>
           </div>
         </div>
- 
+
         <div class="room-row">
           <div class="room-row-thumb">
             <!-- PHOTO SLOT: images/room-standard-twin.jpg -->
-            <img class="photo-slot" src="images/room-standard-twin.jpg" alt="Standard Twin room" onerror="this.style.display='none'">
+            <img class="photo-slot" src="https://images.unsplash.com/photo-1631844820822-caeca853b27d?auto=format&fit=crop&w=1000&q=70" alt="Standard Twin room" onerror="this.style.display='none'">
             <span class="room-code">Twin</span>
           </div>
           <div class="room-row-info">
@@ -360,11 +360,11 @@
             <button class="btn-primary" onclick="showPage('bookings')">Book this room</button>
           </div>
         </div>
- 
+
         <div class="room-row">
           <div class="room-row-thumb">
             <!-- PHOTO SLOT: images/room-double.jpg -->
-            <img class="photo-slot" src="images/room-double.jpg" alt="Double room" onerror="this.style.display='none'">
+            <img class="photo-slot" src="https://images.unsplash.com/photo-1658595149281-8d6bb3643eab?auto=format&fit=crop&w=1000&q=70" alt="Double room" onerror="this.style.display='none'">
             <span class="room-code">Double</span>
           </div>
           <div class="room-row-info">
@@ -382,11 +382,11 @@
             <button class="btn-primary" onclick="showPage('bookings')">Book this room</button>
           </div>
         </div>
- 
+
         <div class="room-row">
           <div class="room-row-thumb">
             <!-- PHOTO SLOT: images/room-deluxe-twin.jpg -->
-            <img class="photo-slot" src="images/room-deluxe-twin.jpg" alt="Deluxe Twin room" onerror="this.style.display='none'">
+            <img class="photo-slot" src="https://images.unsplash.com/photo-1631844820835-e698dc518bc6?auto=format&fit=crop&w=1000&q=70" alt="Deluxe Twin room" onerror="this.style.display='none'">
             <span class="room-code">Deluxe</span>
           </div>
           <div class="room-row-info">
@@ -404,11 +404,11 @@
             <button class="btn-primary" onclick="showPage('bookings')">Book this room</button>
           </div>
         </div>
- 
+
         <div class="room-row">
           <div class="room-row-thumb">
             <!-- PHOTO SLOT: images/room-standard-triple.jpg -->
-            <img class="photo-slot" src="images/room-standard-triple.jpg" alt="Standard Triple room" onerror="this.style.display='none'">
+            <img class="photo-slot" src="https://images.unsplash.com/photo-1683237854712-adb97a9eaa80?auto=format&fit=crop&w=1000&q=70" alt="Standard Triple room" onerror="this.style.display='none'">
             <span class="room-code">Triple</span>
           </div>
           <div class="room-row-info">
@@ -426,11 +426,11 @@
             <button class="btn-primary" onclick="showPage('bookings')">Book this room</button>
           </div>
         </div>
- 
+
         <div class="room-row">
           <div class="room-row-thumb">
             <!-- PHOTO SLOT: images/room-superior.jpg -->
-            <img class="photo-slot" src="images/room-superior.jpg" alt="Superior room" onerror="this.style.display='none'">
+            <img class="photo-slot" src="https://images.unsplash.com/photo-1658595148963-13b7da6dcd6d?auto=format&fit=crop&w=1000&q=70" alt="Superior room" onerror="this.style.display='none'">
             <span class="room-code">Superior</span>
           </div>
           <div class="room-row-info">
@@ -452,7 +452,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- ============ BOOKINGS ============ -->
 <section id="bookings" class="page">
   <div class="section">
@@ -461,7 +461,7 @@
         <h2>Book your stay</h2>
         <p>Add your dates and a phone number — the front desk will hold the room and confirm with you directly.</p>
       </div>
- 
+
       <div class="booking-shell">
         <div class="booking-side">
           <div>
@@ -475,13 +475,13 @@
             <div class="booking-meta-row"><span>Address</span><strong>1-19-1 Kabukicho, Shinjuku-ku</strong></div>
           </div>
         </div>
- 
+
         <form class="booking-form" onsubmit="handleBooking(event)">
           <div class="field">
             <label for="fullname">Full name</label>
             <input type="text" id="fullname" placeholder="Your name" required>
           </div>
- 
+
           <div class="field">
             <label for="phone">Phone number</label>
             <div class="field-phone">
@@ -498,7 +498,7 @@
               <input type="tel" id="phone" placeholder="90-0000-0000" required>
             </div>
           </div>
- 
+
           <div class="field-row">
             <div class="field">
               <label for="checkin">Check-in date</label>
@@ -509,7 +509,7 @@
               <input type="date" id="checkout" required>
             </div>
           </div>
- 
+
           <div class="field-row">
             <div class="field">
               <label for="room-select">Room</label>
@@ -532,7 +532,7 @@
               </select>
             </div>
           </div>
- 
+
           <button type="submit" class="submit-btn">Request reservation</button>
           <div class="confirm-note" id="confirm-note">Request received. The front desk will call the number above to confirm your dates.</div>
         </form>
@@ -540,14 +540,14 @@
     </div>
   </div>
 </section>
- 
+
 <footer>
   <div class="wrap">
-    <span>Hotel Gracery Shinjuku · Kabukicho, Tokyo</span>
+    <span>Hotel Gracery Shinjuku · Kabukicho, Tokyo<br>Room photos: free stock images via Unsplash (Wes Hicks, Erik Mclean, Grant Durr, Federico Garcia)</span>
     <span>1-19-1 Kabukicho, Shinjuku-ku, Tokyo 160-8466 · +81 3-6833-1111</span>
   </div>
 </footer>
- 
+
 <script>
   function showPage(id){
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
@@ -557,13 +557,12 @@
     if(btn) btn.classList.add('active');
     window.scrollTo({top:0, behavior:'smooth'});
   }
- 
+
   function handleBooking(e){
     e.preventDefault();
     document.getElementById('confirm-note').classList.add('show');
   }
 </script>
- 
+
 </body>
 </html>
- 
